@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - BlackRock Residential</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Roboto', sans-serif; margin: 0; color: #333; }
+        header { background: #1b263b; color: white; padding: 1rem 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .logo { font-size: 1.8rem; font-weight: bold; }
+        nav a { color: white; margin: 0 1.5rem; text-decoration: none; font-size: 1.1rem; }
+        nav a:hover { text-decoration: underline; }
+        .hero { background: url('hero-bg.jpg') center/cover no-repeat; padding: 8rem 2rem; text-align: center; color: white; margin-top: 60px; }
+        .hero h1 { font-size: 3rem; margin: 0; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        .hero p { font-size: 1.4rem; margin: 1rem 0; }
+        .hero button { background: #e63946; color: white; padding: 1rem 2rem; border: none; border-radius: 5px; cursor: pointer; font-size: 1.2rem; }
+        .hero button:hover { background: #d32f2f; }
+        .about, .testimonials { padding: 4rem 2rem; text-align: center; max-width: 1200px; margin: 0 auto; }
+        .about h2, .testimonials h2 { font-size: 2.5rem; margin-bottom: 1.5rem; }
+        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; }
+        .about-text { text-align: left; }
+        .about-img img { width: 100%; max-width: 500px; border-radius: 8px; }
+        .testimonials { background: #f7f7f7; }
+        .testimonial-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .testimonial-item { background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); display: flex; align-items: center; }
+        .testimonial-item img { width: 80px; height: 80px; object-fit: cover; border-radius: 50%; margin-right: 1rem; }
+        .testimonial-text { text-align: left; }
+        footer { background: #1b263b; color: white; padding: 2rem; text-align: center; }
+        footer a { color: white; margin: 0 0.5rem; text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+        @media (max-width: 768px) {
+            .hero { padding: 5rem 1rem; }
+            .hero h1 { font-size: 2rem; }
+            .hero p { font-size: 1.1rem; }
+            .hero button { padding: 0.75rem 1.5rem; font-size: 1rem; }
+            .about-grid { grid-template-columns: 1fr; }
+            .about-img { margin-bottom: 1rem; }
+            .testimonial-item { flex-direction: column; align-items: center; text-align: center; }
+            .testimonial-item img { margin-right: 0; margin-bottom: 1rem; }
+            nav a { margin: 0 0.5rem; font-size: 0.9rem; }
+            header { flex-direction: column; padding: 0.5rem 1rem; }
+            .logo { margin-bottom: 0.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">BlackRock Residential</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>Foreclosure Prevention Experts</h1>
+        <p>Compassionate solutions to help you stay in your home.</p>
+        <button onclick="location.href='contact.html'">Get Help Now</button>
+    </section>
+    <section class="about">
+        <h2>Why BlackRock Residential?</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>At BlackRock Residential, we specialize in helping homeowners avoid foreclosure with integrity and diligence. Our Beverly Hills team offers personalized solutions, including loan modifications, short sales, and foreclosure litigation support, to protect your home and financial future.</p>
+            </div>
+            <div class="about-img">
+                <img src="about-img.jpg" alt="BlackRock Residential Team">
+            </div>
+        </div>
+    </section>
+    <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial-item">
+                <img src="testimonial1.jpg" alt="Client Sarah & Michael">
+                <div class="testimonial-text">
+                    <p>"We were facing foreclosure and felt hopeless. BlackRock Residential stepped in, stopped the sale, and secured us a low fixed-rate deal. We’re so grateful!" – Sarah & Michael</p>
+                </div>
+            </div>
+            <div class="testimonial-item">
+                <img src="testimonial2.jpg" alt="Client Emily R.">
+                <div class="testimonial-text">
+                    <p>"The team at BlackRock is professional and caring. They guided us through a short sale with ease, saving us from financial ruin." – Emily R.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>BlackRock Residential | 9171 Wilshire Boulevard, Beverly Hills, CA 90210</p>
+        <p>info@blackrockresidential.com | (310) 555-1234</p>
+        <p><a href="#">Facebook</a> | <a href="#">LinkedIn</a></p>
+    </footer>
+</body>
+</html>
